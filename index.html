@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memento Mori</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <h1 class="centered padding">Memento Mori</h1>
+    <form class="centered padding">
+        <label for="age">Estimated death</label>
+        <input id="age" type="number" min="0" value="90">
+        <label for="birth-date">Birth date</label>
+        <input id="birth-date" type="date" value="1995-06-06">
+        <button type="button" onclick="calc()">Show my progress</button>
+    </form>
+    <span id="info" class="flex-centered padding">For the first, fill the form and submit to get your result!</span>
+    <div id="container" class="container hide">
+        <div id="result" class="result"></div>
+        <div id="result-number" class="result-number"></div>
+    </div>
+</body>
+</html>
